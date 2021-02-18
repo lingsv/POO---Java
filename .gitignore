@@ -3,3 +3,9 @@
 
 # Ada Library Information
 *.ali
+/hello_world/nbproject/private/
+/hello_world/build/
+/18.02_Casting/nbproject/private/
+/18.02_PrimeiraClasse/nbproject/private/
+/18.02_PrimeiraClasse/build/
+/classCarro/nbproject/private/
