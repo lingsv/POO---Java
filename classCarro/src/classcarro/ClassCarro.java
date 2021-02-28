@@ -16,6 +16,12 @@ public class ClassCarro {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    }
-    
-}
+        
+   public int acelerar(){
+        if (marchaAtual == 0 || this.marchaAtual <= 115){
+            marchaAtual = marchaAtual + 5;
+        return marchaAtual;
+        }
+    }        
+
+ 

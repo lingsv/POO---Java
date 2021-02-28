@@ -60,21 +60,40 @@ public class Carro {
     }
     
     // métodos
-    public void ligarDesligar(){
-        if (ligado == True ){
+    
+    public String nome_proprietario(String proprietario){
+        this.proprietario = proprietario;
+        
+        return proprietario;
+    }
+    
+    public void ligarDesligar(boolean ligado){
+        this.ligado = ligado;
+    }
+        if (ligado == True){
             System.out.println("O veículo está ligado");
         }else
         {
             System.out.println("O veículo está desligado");
         }
     }
-    public int acelerar(){
-        
-    }
-    public int frear(){
+  
+    public int frear(int marchaAtual){
+        if (this.marchaAtual >= 115){
+            this.marchaAtual = marchaAtual - 10;
+            
+        }
+        return marchaAtual;
         
     }
     public String status(){
+        String retorno;
         
+        retorno = "\nNome do proprietario: " + proprietario +
+                  "\nLigado ou desligado: " + ligado + 
+                  "\nVelocidade atual " + marchaAtual + 
+                  "\nAno do modelo: " + ano_modelo;
+        
+        return retorno;
     }
-}
+
